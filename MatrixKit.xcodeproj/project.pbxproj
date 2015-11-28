@@ -10,6 +10,7 @@
 		BE2D24391C09073A007C6D18 /* MatrixKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BE2D24381C09073A007C6D18 /* MatrixKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE2D24401C09073A007C6D18 /* MatrixKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2D24351C09073A007C6D18 /* MatrixKit.framework */; };
 		BE2D24451C09073A007C6D18 /* MatrixKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D24441C09073A007C6D18 /* MatrixKitTests.swift */; };
+		BE2D24521C090793007C6D18 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2D24511C090793007C6D18 /* Matrix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		BE2D243F1C09073A007C6D18 /* MatrixKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE2D24441C09073A007C6D18 /* MatrixKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixKitTests.swift; sourceTree = "<group>"; };
 		BE2D24461C09073A007C6D18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE2D24511C090793007C6D18 /* Matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Matrix.swift; path = ../../../../Desktop/Matrix.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		BE2D24371C09073A007C6D18 /* MatrixKit */ = {
 			isa = PBXGroup;
 			children = (
+				BE2D24511C090793007C6D18 /* Matrix.swift */,
 				BE2D24381C09073A007C6D18 /* MatrixKit.h */,
 				BE2D243A1C09073A007C6D18 /* Info.plist */,
 			);
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2D24521C090793007C6D18 /* Matrix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +312,7 @@
 		BE2D244A1C09073A007C6D18 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -318,12 +323,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.adauguet.MatrixKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		BE2D244B1C09073A007C6D18 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -376,6 +383,7 @@
 				BE2D244B1C09073A007C6D18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BE2D244C1C09073A007C6D18 /* Build configuration list for PBXNativeTarget "MatrixKitTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +392,7 @@
 				BE2D244E1C09073A007C6D18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
